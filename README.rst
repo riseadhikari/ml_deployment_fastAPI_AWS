@@ -3,7 +3,7 @@ Machine Learning Model Deployment with FastAPI & AWS
 
 Hi There: 
 
-      In this project, I will be deploying a Machine Learning model using FastAPI and AWS. The model is a 	simple Neural Network, that predicts an image's class. I used FashionMNIST dataset and Pytorch to train the model. Anyway the model is not the main focus here. The main focus here is to learn and understand the flow of deploying a machine learning model in production, utilizing standard tools. This info is just for the context. Le't get started! :)
+      In this project, I will be deploying a Machine Learning model using FastAPI, Docker and AWS. The model is a simple Neural Network, that predicts an image's class. I used FashionMNIST dataset and Pytorch to train the model. Anyway the model is not the main focus here. The main focus here is to learn and understand the flow of deploying a machine learning model in production, utilizing standard tools. This info is just for the context. Le't get started! :)
 
 
 What's Covered
@@ -17,11 +17,12 @@ To be Covered Soon
 ------------------
 
 1. Allow Image as input. [ For now, I have used string of comma separated pixel values as input to keep things simple. ]
-2. Set-up Linting and Formatting
-3. Set up Continuous Integration
-4. Deploy the API using AWS ECR and AWS AppRunner
-5. Set-up Continuous Deployment
-6. Make a YouTube Video, explaining the whole process.
+2. Set-up Linting and Formatting.
+3. Dockerize the project.
+4. Set up Continuous Integration.
+5. Deploy the API using AWS ECR and AWS AppRunner.
+6. Set-up Continuous Deployment.
+7. Make a YouTube Video, explaining the whole process.
 
 
 How To Run The Code:
