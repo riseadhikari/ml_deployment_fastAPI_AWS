@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
 
-from app import app
+from .app import app
 
 client = TestClient(app)
 
@@ -66,19 +66,22 @@ a = """0,   1,   2,   3,   4,   5,   6,   7,   8,   9,  10,  11,  12,
        767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779,
        780, 781, 782, 783"""
 
-a = a.strip().replace('\n', '').replace(' ', '')
+a = a.strip().replace("\n", "").replace(" ", "")
+
 
 def test_invalid_input_size():
     response = client.get("/predict/1,2,3,4,5")
     assert response.status_code == 400
-    assert response.json() == {'error': 'Invalid input, expected 784 pixel values'}
-    print('All Tests passed')
+    assert response.json() == {"error": "Invalid input, expected 784 pixel values"}
+    print("All Tests passed")
+
 
 def test_valid_input_size():
     response = client.get(f"/predict/{a}")
     assert response.status_code == 200
     print(response.json())
-    print('Second Tests passed')
+    print("Second Tests passed")
+
 
 # below block will let you run test manually without pytest..  python test_app.py
 # uncomment below block to run test manually if you want to

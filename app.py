@@ -1,6 +1,6 @@
 import numpy as np
 from fastapi import FastAPI, Response, status
-from models.fashionModel import fashion_classifier
+from .models.fashionModel import fashion_classifier
 import torch
 
 # initialize the app
