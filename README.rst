@@ -14,15 +14,15 @@ What's Covered
 3. Initializing, Committing, and Pushing the code to GitHub
 4. Set-up Linting and Formatting.
 5. Dockerize the project.
+6. Set up Continuous Integration.
 
 To be Covered Soon
 ------------------
 
 1. Allow Image as input. [ For now, I have used string of comma separated pixel values as input to keep things simple. ]
-2. Set up Continuous Integration.
-3. Deploy the API using AWS ECR and AWS AppRunner.
-4. Set-up Continuous Deployment.
-5. Make a YouTube Video, explaining the whole process.
+2. Deploy the API using AWS ECR and AWS AppRunner.
+3. Set-up Continuous Deployment.
+4. Make a YouTube Video, explaining the whole process.
 
 
 How To Run The Code:
