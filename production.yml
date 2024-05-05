@@ -1,0 +1,12 @@
+version: '1'
+
+services:
+  fastapi: &fastapi
+    build:
+      context: .
+      dockerfile: ./compose/production/Dockerfile
+    image: fastapi_production_image
+    container_name: fastapi_production_container
+    platform: linux/x86_64
+    ports:
+      - "80:80"
